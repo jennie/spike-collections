@@ -1,12 +1,37 @@
 {
-  "name": "spike-collections",
-  "description": "jekyll-esque features for spike",
-  "version": "1.2.0",
-  "author": "Jeff Escalante",
+  "_from": "git+https://github.com/jennie/spike-collections.git",
+  "_id": "spike-collections@1.2.0",
+  "_inBundle": false,
+  "_integrity": "sha1-6WOOZ+orbaayR8VpYKxLuYhDJY8=",
+  "_location": "/spike-collections",
+  "_phantomChildren": {
+    "argparse": "1.0.9"
+  },
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/jennie/spike-collections",
+    "rawSpec": "https://github.com/jennie/spike-collections",
+    "saveSpec": "git+https://github.com/jennie/spike-collections.git",
+    "fetchSpec": "https://github.com/jennie/spike-collections.git",
+    "gitCommittish": "master"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/jennie/spike-collections.git#291c026479f0f7944a1d1000c30503bd9f429dad",
+  "_spec": "https://github.com/jennie/spike-collections",
+  "_where": "/Users/jennie/Sites/pangaea",
+  "author": {
+    "name": "Jeff Escalante"
+  },
   "ava": {
     "verbose": "true"
   },
-  "bugs": "https://github.com/static-dev/spike-collections/issues",
+  "bugs": {
+    "url": "https://github.com/static-dev/spike-collections/issues"
+  },
+  "bundleDependencies": false,
   "dependencies": {
     "es6bindall": "^0.0.9",
     "filewrap": "^1.0.0",
@@ -15,11 +40,17 @@
     "js-yaml": "^3.9.1",
     "lodash.bindall": "^4.4.0",
     "markdown-it": "^8.3.2",
+    "markdown-it-attrs": "^1.2.0",
+    "markdown-it-container": "^2.0.0",
     "markdown-it-footnote": "^3.0.1",
+    "markdown-it-sup": "^1.0.0",
+    "markdown-it-toc-and-anchor": "^4.1.2",
     "objectfn": "^2.0.0",
     "spike-util": "^1.3.0",
     "when": "^3.7.8"
   },
+  "deprecated": false,
+  "description": "jekyll-esque features for spike",
   "devDependencies": {
     "ava": "^0.22.0",
     "coveralls": "^2.13.1",
@@ -40,11 +71,16 @@
   ],
   "license": "MIT",
   "main": "lib",
-  "repository": "static-dev/spike-collections",
+  "name": "spike-collections",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/static-dev/spike-collections.git"
+  },
   "scripts": {
     "coverage": "nyc ava && nyc report --reporter=html && open ./coverage/index.html",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "lint": "prettier --no-semi --single-quote --write '**/*.js'",
     "test": "nyc ava"
-  }
+  },
+  "version": "1.2.0"
 }
